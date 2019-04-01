@@ -104,7 +104,7 @@ define_ibex_controller({ //combines FlashSentence and Message controller so that
         options: this.options,
         triggers: [1],
         children: [
-          "FrenchMessage", this.options,
+          "FrenchMessage2", this.options,
           "FrenchPictureAccept", this.options,
         ]
       });
