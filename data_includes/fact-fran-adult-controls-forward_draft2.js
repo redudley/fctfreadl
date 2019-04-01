@@ -180,5 +180,5 @@ var items = [
     ["finished", "Message", {html: {include: 'fact_fran_finish.html'}}],
     ["subj_info", "Form", {html: {include: 'french_questionary.html'}}],
     ["code", "Form", {html: {include: 'french_number_fact.html'}}],
-["T1", "PictureAccept2", {html: 'clue.html', as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}]
+["T1", "PictureAccept2", {html: {include: 'clue.html'}, as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}]
   ]
