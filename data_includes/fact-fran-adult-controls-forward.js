@@ -55,7 +55,7 @@ var manualSendResults = true;
 
 var IMAGES_TO_PRELOAD = [
 
-    "https://imgur.com/CKEa3Zr.png", // 8-4c0s -   every-circle,                 conj & known conditions
+    "https://imgur.com/4Y12FOw.png", // two boxes image
 ];
 
 
@@ -114,5 +114,5 @@ var items = [
 
     ["T1", "AcceptabilityJudgment", {s: "Rachel sait qu'il n’est pas dans la boite bleue."},
                                       {q: "Laquelle est votre choix?"},
-                                      {as: "Certainement dans la bleue", "Certainement dans la rouge"}],
+                                      {as: [["Certainement dans la bleue"], ["Certainement dans la rouge"]]}],
 ];
