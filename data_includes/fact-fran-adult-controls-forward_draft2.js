@@ -180,5 +180,5 @@ var items = [
     ["finished", "Message", {html: {include: 'fact_fran_finish.html'}}],
     ["subj_info", "Form", {html: {include: 'french_questionary.html'}}],
     ["code", "Form", {html: {include: 'french_number_fact.html'}}],
-["T1", "PictureAccept2", {html: picture58, as: [["A", 'http://cogexpe.scicog.fr/KNPIM1/Slide8.PNG'], ["B", 'http://cogexpe.scicog.fr/KNPI3/black.PNG']]}]
+["T1", "PictureAccept2", {html: picture58, as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}]
   ]
