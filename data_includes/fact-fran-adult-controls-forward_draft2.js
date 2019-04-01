@@ -151,7 +151,7 @@ var shuffleSequence = seq( "preload",
                              "T1",
                              "finished",
                              "subj_info",
-                             // "sr",
+                             "sr",
                              "code");
 var defaults = [
 
