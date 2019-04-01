@@ -131,6 +131,8 @@ define_ibex_controller({ //combines FlashSentence and Message controller so that
 // nePasBleue = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
 // nePasRouge = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
 
+picture58 = "<center><img src='http://cogexpe.scicog.fr/KNPIM1/Slide58.PNG' width='300'></center>"
+
 var items = [
 
 
@@ -156,6 +158,6 @@ var items = [
 
     ["code", "FrenchDoneForm", {html: {include: 'french_number_fact.html'}}],
 
-    ["T1", "FrenchPictureAccept2", {html: 'clue.html',
+    ["T1", "FrenchPictureAccept2", {html: picture58,
                                     as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}],
 ];
