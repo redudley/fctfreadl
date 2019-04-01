@@ -110,8 +110,6 @@ define_ibex_controller({ //combines FlashSentence and Message controller so that
   properties: { }
 });
 
-redBox =
-blueBox =
 
 var items = [
 
