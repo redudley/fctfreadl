@@ -103,7 +103,7 @@ define_ibex_controller({ //combines FlashSentence and Message controller so that
   properties: { }
 });
 
-// var manualSendResults = true;
+var manualSendResults = true;
 
 var IMAGES_TO_PRELOAD = [
 
@@ -172,7 +172,7 @@ picture58 = "<center><img src='http://cogexpe.scicog.fr/KNPIM1/Slide58.PNG' widt
 
 var items = [
     ["preload", "FrenchPreloader", { }],
-    // ["sr", "__SendResults__", { }],
+    ["sr", "__SendResults__", { }],
     ["consent", "Form", {html: {include: 'french_agreement.html'}}],
     ["warning", "Message", {html: {include: 'fact_fran_warning.html'}}],
     ["instructions","Message", {html: {include: 'fact_fran_instructions.html'}}],
