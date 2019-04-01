@@ -42,12 +42,13 @@ var defaults = [
         hideProgressBar: false,
         continueOnReturn: true,
     },
-    "AcceptabilityJudgment", {
+    "FrenchPictureAccept", {
         hideProgressBar: false,
-        instructions: null,
-        hasCorrect: false,
-        presentAsScale: true,
-        presentHorizontally: true,
+        randomOrder: false,
+    },
+    "FrenchPictureAccept2", {
+        hideProgressBar: false,
+        randomOrder: false,
     },
 ];
 
@@ -56,6 +57,8 @@ var manualSendResults = true;
 var IMAGES_TO_PRELOAD = [
 
     "https://imgur.com/4Y12FOw.png", // two boxes image
+    "https://imgur.com/POQybWv.png", // blue box
+    "https://imgur.com/FPY6N5z.png", // red box
 ];
 
 
@@ -87,6 +90,29 @@ define_ibex_controller({
     }
 });
 
+define_ibex_controller({ //combines FlashSentence and Message controller so that we can have text and picture at the same time. I tried to do this with two
+  //htmls but didn't make it.
+  name: "FrenchPictureAccept2",
+
+  jqueryWidget: {
+    _init: function() {
+      //this.options.transfer = null;
+      this.element.VBox({
+        options: this.options,
+        triggers: [1],
+        children: [
+          "FrenchMessage", this.options,
+          "FrenchPictureAccept", this.options,
+        ]
+      });
+    }
+  },
+  properties: { }
+});
+
+redBox =
+blueBox =
+
 var items = [
 
 
@@ -112,7 +138,6 @@ var items = [
 
     ["code", "FrenchDoneForm", {html: {include: 'french_number_fact.html'}}],
 
-    ["T1", "AcceptabilityJudgment", {s: "Rachel sait qu'il n’est pas dans la boite bleue."},
-                                      {q: "Laquelle est votre choix?"},
-                                      {as: [["1","Certainement dans la bleue"], ["2","Certainement dans la rouge"]]}],
+    ["T1", "FrenchPictureAccept2", {html: 'clue.html',
+                                    as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}],
 ];
