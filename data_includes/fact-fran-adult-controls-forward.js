@@ -104,7 +104,7 @@ define_ibex_controller({ //combines FlashSentence and Message controller so that
         options: this.options,
         triggers: [1],
         children: [
-          "FrenchMessage2", this.options,
+          "FrenchMessage", this.options,
           "FrenchPictureAccept", this.options,
         ]
       });
@@ -113,6 +113,23 @@ define_ibex_controller({ //combines FlashSentence and Message controller so that
   properties: { }
 });
 
+// neSaitPasBleue = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// neSaitPasRouge = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// nePensePasBleue = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// nePensePasRouge = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+//
+// saitNePasBleue = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// saitNePasRouge = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// penseNePasBleue = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// penseNePasRouge = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+//
+// saitBleue = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// saitRouge = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// penseBleue = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// penseRouge = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+//
+// nePasBleue = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
+// nePasRouge = <td align='center'><audio autoplay controls controlsList="nodownload"><source src='address.wav' type='audio/wav'>+Votre navigateur ne supporte pas l'audio.</audio>
 
 var items = [
 
