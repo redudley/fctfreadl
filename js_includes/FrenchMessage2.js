@@ -1,7 +1,7 @@
 /* This software is licensed under a BSD license; see the LICENSE file for details. */
 
 define_ibex_controller({
-name: "Message2",
+name: "FrenchMessage2",
 
 jqueryWidget: {
     _init: function () {
