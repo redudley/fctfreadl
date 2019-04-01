@@ -38,6 +38,9 @@ var defaults = [
     "FrenchMessage", {
         hideProgressBar: false,
     },
+    "FrenchMessage2", {
+        hideProgressBar: false,
+    },
     "FrenchForm", {
         hideProgressBar: false,
         continueOnReturn: true,
@@ -101,7 +104,7 @@ define_ibex_controller({ //combines FlashSentence and Message controller so that
         options: this.options,
         triggers: [1],
         children: [
-          "FrenchMessage", this.options,
+          "FrenchMessage2", this.options,
           "FrenchPictureAccept", this.options,
         ]
       });
