@@ -114,5 +114,5 @@ var items = [
 
     ["T1", "AcceptabilityJudgment", {s: "Rachel sait qu'il n’est pas dans la boite bleue."},
                                       {q: "Laquelle est votre choix?"},
-                                      {as: [["Certainement dans la bleue"], ["Certainement dans la rouge"]]}],
+                                      {as: [["1","Certainement dans la bleue"], ["2","Certainement dans la rouge"]]}],
 ];
