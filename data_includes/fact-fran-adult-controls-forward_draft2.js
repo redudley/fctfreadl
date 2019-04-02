@@ -1,71 +1,4 @@
-define_ibex_controller({ //combines FlashSentence and Message controller so that we can have text and picture at the same time. I tried to do this with two
-  //htmls but didn't make it.
-  name: "msgmsg",
-
-  jqueryWidget: {
-    _init: function() {
-      //this.options.transfer = null;
-      this.element.VBox({
-        options: this.options,
-        triggers: [1],
-        children: [
-          "FlashSentence", this.options,
-          "Message", this.options,
-        ]
-      });
-    }
-  },
-  properties: { }
-});
-
-
 define_ibex_controller({
-  name: "msgmsg2",
-
-  jqueryWidget: {
-
-    _init: function() {
-      //this.options.transfer = null;
-      //Message2 controller is there just cause it's transfer is null, so there's no 'click to continue' message
-    this.element.VBox({
-        options: this.options,
-        padding: "0.5em",
-        triggers: [2],
-        children: [
-          "FlashSentence", this.options,
-          "Message2", this.options,
-          "Question", this.options,
-        ]
-      });
-    }
-  },
-  properties: {
-     }
-
-});
-
-define_ibex_controller({
-  name: "msgmsg3",
-
-  jqueryWidget: {
-    _init: function() {
-      //this.options.transfer = null;
-      //Message2 controller is there just cause it's transfer is null, so there's no 'click to continue' message
-      this.element.VBox({
-        options: this.options,
-        triggers: [1],
-        children: [
-          "FlashSentence", this.options,
-          "Question", this.options,
-        ]
-      });
-    }
-  },
-  properties: { }
-});
-
-define_ibex_controller({ //combines FlashSentence and Message controller so that we can have text and picture at the same time. I tried to do this with two
-  //htmls but didn't make it.
   name: "PictureAccept2",
 
   jqueryWidget: {
@@ -134,9 +67,6 @@ var shuffleSequence = seq( "preload", "consent", "warning", "task", "clues", "so
 var defaults = [
 
 "Message", {hideProgressBar: true},
-"msgmsg", {hideProgressBar: true},
-"msgmsg2", {hideProgressBar: true, presentHorizontally: true},
-"msgmsg3", {hideProgressBar: true, presentHorizontally: true},
 "Form", {hideProgressBar: true},
 "FrenchDoneForm", {hideProgressBar: true},
 "PictureAccept2", {hideProgressBar: true}
