@@ -69,6 +69,7 @@ var defaults = [
 "Message", {hideProgressBar: true},
 "Message2", {hideProgressBar: true},
 "Form", {hideProgressBar: true},
+"FrenchForm", {hideProgressBar: true},
 "FrenchDoneForm", {hideProgressBar: true},
 "PictureAccept2", {hideProgressBar: true}
 ];
@@ -76,7 +77,7 @@ var defaults = [
 var items = [
     ["preload", "FrenchPreloader", { }],
     ["sr", "__SendResults__", { }],
-    ["consent", "Form", {html: {include: 'french_agreement.html'}}],
+    ["consent", "FrenchForm", {html: {include: 'french_agreement.html'}}],
     ["warning", "Message", {html: {include: 'fact_fran_warning.html'}}],
     ["task","Message", {html: {include: 'fact_fran_task.html'}}],
     ["clues","Message", {html: {include: 'fact_fran_clues.html'}}],
