@@ -18,7 +18,7 @@ define_ibex_controller({
 });
 
 var manualSendResults = true;
-var progressBarText = "progrès";
+var progressBarText = "";//progrès
 
 var IMAGES_TO_PRELOAD = [
 
