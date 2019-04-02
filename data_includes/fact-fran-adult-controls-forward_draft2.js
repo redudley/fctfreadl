@@ -1,22 +1,3 @@
-define_ibex_controller({ //combines question and message controller so that we can present the target sentence and picture at the same time
-  name: "tvjt",
-
-  jqueryWidget: {
-    _init: function() {
-      //this.options.transfer = null;
-      this.element.VBox({
-        options: this.options,
-        triggers: [0],
-        children: [
-          "Question", this.options,
-          "Message", this.options,
-        ]
-      });
-    }
-  },
-  properties: { }
-});
-
 define_ibex_controller({ //combines FlashSentence and Message controller so that we can have text and picture at the same time. I tried to do this with two
   //htmls but didn't make it.
   name: "msgmsg",
@@ -152,7 +133,6 @@ var shuffleSequence = seq( "preload", "consent", "warning", "task", "clues", "so
                              "finished","subj_info","sr","code");
 var defaults = [
 
-"tvjt", {hideProgressBar: true},
 "Message", {hideProgressBar: true},
 "msgmsg", {hideProgressBar: true},
 "msgmsg2", {hideProgressBar: true, presentHorizontally: true},
