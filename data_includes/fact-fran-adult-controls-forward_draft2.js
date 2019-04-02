@@ -73,7 +73,7 @@ var defaults = [
 "Message2", {hideProgressBar: true},
 "FrenchForm", {hideProgressBar: true},
 "FrenchDoneForm", {hideProgressBar: true},
-"PictureAccept2", {hideProgressBar: false}
+"PictureAccept2", {hideProgressBar: false},
 ];
 
 var items = [
