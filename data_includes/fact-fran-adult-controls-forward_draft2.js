@@ -67,6 +67,7 @@ var shuffleSequence = seq( "preload", "consent", "warning", "task", "clues", "so
 var defaults = [
 
 "Message", {hideProgressBar: true},
+"SuivantMessage", {hideProgressBar: true},
 "Message2", {hideProgressBar: true},
 "FrenchForm", {hideProgressBar: true},
 "FrenchDoneForm", {hideProgressBar: true},
@@ -77,7 +78,7 @@ var items = [
     ["preload", "FrenchPreloader", { }],
     ["sr", "__SendResults__", { }],
     ["consent", "FrenchForm", {html: {include: 'french_agreement.html'}}],
-    ["warning", "Message", {html: {include: 'fact_fran_warning.html'}}],
+    ["warning", "SuivantMessage", {html: {include: 'fact_fran_warning.html'}}],
     ["task","Message", {html: {include: 'fact_fran_task.html'}}],
     ["clues","Message", {html: {include: 'fact_fran_clues.html'}}],
     ["soundtest", "Message", {html: {include: 'fact_fran_sound.html'}}],
