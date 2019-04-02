@@ -18,6 +18,7 @@ define_ibex_controller({
 });
 
 var manualSendResults = true;
+var progressMessage = "progrès";
 
 var IMAGES_TO_PRELOAD = [
 
