@@ -158,6 +158,7 @@ var defaults = [
 "msgmsg2", {hideProgressBar: true, presentHorizontally: true},
 "msgmsg3", {hideProgressBar: true, presentHorizontally: true},
 "Form", {hideProgressBar: true},
+"FrenchDoneForm", {hideProgressBar: true},
 "PictureAccept2", {hideProgressBar: true}
 ];
 
@@ -171,7 +172,7 @@ var items = [
     ["soundtest", "Message", {html: {include: 'fact_fran_sound.html'}}],
     ["finished", "Message", {html: {include: 'fact_fran_finish.html'}}],
     ["subj_info", "Form", {html: {include: 'french_questionary.html'}}],
-    ["code", "Form", {html: {include: 'french_number_fact.html'}}],
+    ["code", "FrenchDoneForm", {html: {include: 'french_number_fact.html'}}],
     ["T1", "PictureAccept2", {html: {include: 'sait_ne_ind_pas_bleue.html'}, as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}],
     ["T2", "PictureAccept2", {html: {include: 'pense_ne_ind_pas_rouge.html'}, as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}],
     ["T3", "PictureAccept2", {html: {include: 'sait_ind_rouge.html'}, as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}],

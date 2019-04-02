@@ -11,7 +11,7 @@ jqueryWidget: {
 
         this.html = dget(this.options, "html");
         this.continueOnReturn = dget(this.options, "continueOnReturn", false);
-        this.continueMessage = dget(this.options, "continueMessage", "Vous avez terminé. Vous pouvez retourner à Foule Factory.");
+        this.continueMessage = dget(this.options, "continueMessage", false);
         this.checkedValue = dget(this.options, "checkedValue", "yes");
         this.uncheckedValue = dget(this.options, "uncheckedValue", "no");
         this.validators = dget(this.options, "validators", { });
