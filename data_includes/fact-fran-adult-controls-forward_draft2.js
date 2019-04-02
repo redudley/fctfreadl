@@ -143,32 +143,17 @@ define_ibex_controller({
 
 
 //shuffleSequence = seq(anyType);
-var shuffleSequence = seq( "preload",
-                             "consent",
-                             "warning",
-                             "task",
-                             "clues",
-                             "soundtest",
-                             "T1", "T2", "T3", "T4", "T5",
-                             "T6", "T7", "T8", "T9", "T10",
-                             "T11", "T12", "T13", "T14", "T15",
-                             "T16", "T17", "T18", "T19", "T20",
-                             "T21", "T22", "T23", "T24", "T25",
-                             "T26", "T27", "T28", "T29", "T30",
-                             "T31", "T32", "T33", "T34", "T35",
-                             "T36", "T37", "T38", "T39", "T40",
+var shuffleSequence = seq( "preload", "consent", "warning", "task", "clues", "soundtest",
+                             "T1",  "T2",   "T3",   "T4",   "T5",   "T6",  "T7",   "T8",   "T9",   "T10",
+                             "T11", "T12",  "T13",  "T14",  "T15",  "T16", "T17",  "T18",  "T19",  "T20",
+                             "T21", "T22",  "T23",  "T24",  "T25",  "T26", "T27",  "T28",  "T29",  "T30",
+                             "T31", "T32",  "T33",  "T34",  "T35",  "T36", "T37",  "T38",  "T39",  "T40",
                              "T41", "T42",
-                             "finished",
-                             "subj_info",
-                             "sr",
-                             "code");
+                             "finished","subj_info","sr","code");
 var defaults = [
 
 "tvjt", {hideProgressBar: true},
 "Message", {hideProgressBar: true},
-"CommencerMessage", {hideProgressBar: true},
-"SuivantMessage", {hideProgressBar: true},
-"FinirMessage", {hideProgressBar: true},
 "msgmsg", {hideProgressBar: true},
 "msgmsg2", {hideProgressBar: true, presentHorizontally: true},
 "msgmsg3", {hideProgressBar: true, presentHorizontally: true},
@@ -176,16 +161,15 @@ var defaults = [
 "PictureAccept2", {hideProgressBar: true}
 ];
 
-
 var items = [
     ["preload", "FrenchPreloader", { }],
     ["sr", "__SendResults__", { }],
     ["consent", "Form", {html: {include: 'french_agreement.html'}}],
-    ["warning", ``"SuivantMessage", {html: {include: 'fact_fran_warning.html'}}],
-    ["task","SuivantMessage", {html: {include: 'fact_fran_task.html'}}],
-    ["clues","SuivantMessage", {html: {include: 'fact_fran_clues.html'}}],
-    ["soundtest", "CommencerMessage", {html: {include: 'fact_fran_sound.html'}}],
-    ["finished", "FinirMessage", {html: {include: 'fact_fran_finish.html'}}],
+    ["warning", "Message", {html: {include: 'fact_fran_warning.html'}}],
+    ["task","Message", {html: {include: 'fact_fran_task.html'}}],
+    ["clues","Message", {html: {include: 'fact_fran_clues.html'}}],
+    ["soundtest", "Message", {html: {include: 'fact_fran_sound.html'}}],
+    ["finished", "Message", {html: {include: 'fact_fran_finish.html'}}],
     ["subj_info", "Form", {html: {include: 'french_questionary.html'}}],
     ["code", "Form", {html: {include: 'french_number_fact.html'}}],
     ["T1", "PictureAccept2", {html: {include: 'sait_ne_ind_pas_bleue.html'}, as: [["B",'https://imgur.com/POQybWv.png'], ["R",'https://imgur.com/FPY6N5z.png']]}],
