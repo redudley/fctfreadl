@@ -67,6 +67,7 @@ var shuffleSequence = seq( "preload", "consent", "warning", "task", "clues", "so
 var defaults = [
 
 "Message", {hideProgressBar: true},
+"Message2", {hideProgressBar: true},
 "Form", {hideProgressBar: true},
 "FrenchDoneForm", {hideProgressBar: true},
 "PictureAccept2", {hideProgressBar: true}
