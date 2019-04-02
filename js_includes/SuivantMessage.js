@@ -63,10 +63,10 @@ jqueryWidget: {
                 t.element.append(
                     $(document.createElement("p"))
                     .css('clear', 'left')
-                        .append($(document.createElement("a"))
+                    .append($(document.createElement("a"))
                             .attr('href', '')
                             .addClass(t.cssPrefix + 'continue-link')
-                            .text(t.continueMessage)
+                            .text("\u2192 " + t.continueMessage)
                             .click(function () {
                                 if ((! checkbox) || checkbox.attr('checked'))
                                     t.finishedCallback();
